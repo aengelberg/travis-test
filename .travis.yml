@@ -1,1 +1,8 @@
-script: echo hi
+language: python
+python:
+  - '3.8'
+  - '3.7'
+env:
+  - PERSON_NAME=Duncan
+  - PERSON_NAME=Mona
+script: echo "Hello, $PERSON_NAME!"
