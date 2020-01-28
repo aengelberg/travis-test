@@ -4,10 +4,11 @@ node_js:
   - 6
   - 8
   - 10
-dist:
-  - trusty
-  - bionic
-os:
-  - linux
-  - macos
+jobs:
+  include:
+    - os: linux
+      dist: trusty
+    - os: linux
+      dist: bionic
+    - os: osx
 script: echo "Hello there, I'm on $(arch)"
