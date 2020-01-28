@@ -1,8 +1,13 @@
-language: python
-python:
-  - '3.8'
-  - '3.7'
-env:
-  - PERSON_NAME=Duncan
-  - PERSON_NAME=Mona
-script: echo "Hello, $PERSON_NAME!"
+language: node_js
+node_js:
+  - 4
+  - 6
+  - 8
+  - 10
+dist:
+  - trusty
+  - bionic
+os:
+  - linux
+  - macos
+script: echo "Hello there, I'm on $(arch)"
